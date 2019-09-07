@@ -28,7 +28,7 @@ class Song
     def self.genre_count
       i = 0
       h_genre = Hash[@@genres.uniq.collect { |e| [e, 0]}]
-      h_genre.value { |v|
+      h_genre.transform_values { |v|
         if h_genre[v] == genres[i]
           v += 1
           i += 1
