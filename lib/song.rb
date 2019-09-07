@@ -34,7 +34,7 @@ class Song
           h[e] = 1
         end
       }
-      h
+
 
     def self.artist_count
 
