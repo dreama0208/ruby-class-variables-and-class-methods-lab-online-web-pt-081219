@@ -35,5 +35,5 @@ class Song
         end
       }
       h
-
+    end
 end
