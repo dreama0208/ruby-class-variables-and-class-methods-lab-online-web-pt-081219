@@ -26,7 +26,14 @@ class Song
     end
 
     def self.genre_count
+      i = 0
       h_genre = Hash[@@genres.uniq.collect { |e| [e, 0]}]
+      h_genre.collect { |e, v| 
+        if e == genres[i]
+          v += 1
+          i += 1
+        end
+      }
     end
 
     def self.artist_count
