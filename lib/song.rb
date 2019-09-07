@@ -46,6 +46,7 @@ class Song
           h[e] = 1
         end
       }
+      h
     end
 
 end
